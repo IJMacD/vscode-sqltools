@@ -68,5 +68,12 @@
       "username": "root",
       "server": "localhost"
     },
+    {
+      "askForPassword": false,
+      "connectionTimeout": 15,
+      "database": "Demo",
+      "dialect": "IJMacD",
+      "name": "IJMacD"
+    }
   ]
 }

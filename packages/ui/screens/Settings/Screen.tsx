@@ -47,6 +47,12 @@ const dialectOptions = {
     showHelperText: true,
     requirements,
   },
+  IJMacD: {
+    value: 'IJMacD',
+    text: 'IJMacD',
+    showHelperText: true,
+    requirements,
+  },
 };
 
 interface FieldWrapperProps {
@@ -138,6 +144,15 @@ export default class SettingsScreen extends React.Component<{}, SetupState> {
           newState.fields.askForPassword.visible = false;
           newState.fields.connectionTimeout.visible = false;
           newState.fields.database.type = 'file';
+        } else if (this.state.data.dialect === 'IJMacD') {
+          newState.fields.port.visible = false;
+          newState.fields.server.visible = false;
+          newState.fields.username.visible = false;
+          newState.fields.password.visible = false;
+          newState.fields.askForPassword.visible = false;
+          newState.fields.connectionTimeout.visible = false;
+          newState.fields.database.type = 'text';
+          newState.data.database = "Demo";
         } else {
           if (this.state.fields.database.type === 'file') {
             newState.data.database = undefined;

@@ -419,7 +419,8 @@
                                     "MySQL",
                                     "OracleDB",
                                     "PostgreSQL",
-                                    "SQLite"
+                                    "SQLite",
+                                    "IJMacD"
                                 ],
                                 "description": "Connection Dialect",
                                 "required": false

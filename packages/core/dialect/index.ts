@@ -3,6 +3,7 @@ import MySQL from './mysql';
 import OracleDB from './oracle';
 import PostgreSQL from './pgsql';
 import SQLite from './sqlite';
+import IJMacD from './ijmacd-query';
 
 const dialects = {
   MSSQL,
@@ -10,6 +11,7 @@ const dialects = {
   PostgreSQL,
   OracleDB,
   SQLite,
+  IJMacD,
 };
 
 export default dialects;
